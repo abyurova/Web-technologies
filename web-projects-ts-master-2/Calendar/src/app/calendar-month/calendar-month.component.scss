@@ -1,0 +1,40 @@
+.week-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .week-col{
+        flex-grow: 1;
+        width: 14.28%;
+        text-align: center;
+        color: #ddd;
+    }
+}
+
+.days-row{
+    display: inline-block;
+    width: 14.2%;
+    text-align: center;
+
+    padding: 2px 0;
+
+    .active{
+        background-color: rgb(231, 25, 25);
+        color: white;
+    }
+    .today{
+
+        border: 0.2px solid red;
+        border-radius: 50%;
+        background-color: red;
+        color: white;
+    }
+
+    &:hover{
+        cursor: pointer;
+        background-color: #eee;
+    }
+    &:focus{
+        background-color: red;
+    }
+}

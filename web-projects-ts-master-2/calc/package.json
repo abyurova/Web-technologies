@@ -1,0 +1,24 @@
+{
+  "name": "calc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/index.ts",
+    "start:js": "node dist/index.js",
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.2.12",
+    "lite-server": "^2.3.0",
+    "typescript": "^2.5.2",
+    "ts-node": "3.3.0"
+  }
+}

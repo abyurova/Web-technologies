@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "target": "es5",
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "lib":[
+            "dom",
+            "es2015"
+        ]
+    },
+    "include": [
+        "src"
+    ]
+}

@@ -1,0 +1,20 @@
+
+
+<div class="navigation">
+  <div class="left">{{ year }}</div>
+  <div class="right">
+      <button (click)="year=year-1">back</button>
+      <button (click)="year=curYear">today</button>
+      <button (click)="year=year+1">next</button>
+  </div>
+  <div class="clear"></div>
+
+</div>
+
+<!-- <input [(ngModel)]="year"> -->
+<div class="calendar-block">
+  <div *ngFor="let month of months" class="month-block">
+    <p class="month-title">{{ month }}<p>
+   <app-calendar-month [currentMonth]="month" [currentYear]="year"></app-calendar-month>
+  </div>
+</div>

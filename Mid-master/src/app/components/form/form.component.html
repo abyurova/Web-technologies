@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="form">
+        <span>Add Post</span>
+        <div class="input-group">
+            <span>Title:</span><input type="text" [(ngModel)]="title">
+        </div>
+        <div class="input-group">
+            <span>Author:</span><input type="text" [(ngModel)]="author">
+        </div>
+        <div class="input-group">
+            <span>Content:</span><textarea name="" id="" cols="30" rows="10" [(ngModel)]="content"></textarea>
+        </div>
+        <button type="submit" (click)="onCreate()">Add</button>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+
+<input  [(ngModel)] = "numberA" />
+<br>
+<label> {{ myLabel }} </label>
+
+<input  [(ngModel)] = "numberB" />
+
+<label> = {{ sum }} </label>
+
+
+<div>
+    <div *ngFor = "let x of buttons">
+        <button *ngFor = "let y of x" (click)="sum = sum * 10 + y">
+          {{y}}  
+        </button>  
+    </div>
+    
+    <div>
+      <button (click) = "zeroTapped()"> 
+        0 
+      </button>
+      <button (click) = "getResult()">
+        = 
+      </button>
+      <button (click) = "clear()"> 
+        C 
+      </button>
+    </div>
+    
+    <div>
+        <button (click) = "makeAddition()"> + </button>
+        <button (click) = "makeSubstraction()"> - </button>
+        <button (click) = "makeMultiplication()"> * </button>
+        <button (click) = "makeDivision()"> / </button>
+  
+    </div>
+</div>
+

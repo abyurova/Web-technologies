@@ -1,0 +1,21 @@
+<div class="month">
+    <div class="week-row">
+        <div class="week-col" *ngFor="let week of week">{{week}}</div>            
+    </div>
+    
+    <div class="days-block">
+        <div *ngFor="let r of days" class="days-row">
+            
+                <div class="days-col" *ngIf="r.myDay==0">
+                        
+                    </div>
+                <div class="days-col" 
+                    *ngIf="r.myDay!=0" 
+                    (click)="chooseDay(r)" 
+                    [class.active] = "r.inRange" 
+                    [class.today]="r.isToday">
+                    {{r.myDay}}
+                </div>
+            </div>
+  </div>
+</div>
