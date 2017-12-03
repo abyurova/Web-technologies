@@ -1,0 +1,17 @@
+.example-card{
+    width: fit-content;
+    padding: 30px 60px;
+
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.profile{
+    flex: 1 0 25%;
+}
+
+.profile-friends{
+    flex: 1 0 75%;
+}

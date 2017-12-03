@@ -1,0 +1,13 @@
+<header>
+  <nav>
+    <button mat-button [routerLink]="['/']">
+      <mat-icon> home </mat-icon>
+      <span> Home </span>
+    </button>
+    <button mat-button [routerLink]="['/profile']">
+      <mat-icon> account_circle</mat-icon>
+      <span> Profile </span>
+    </button>
+    <mat-slide-toggle [formControl]="checked">Login</mat-slide-toggle>
+  </nav>
+</header>
